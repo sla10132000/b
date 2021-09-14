@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	grpcSetup "github.com/emailtovamos/m-highscore/internal/server/grpc"
+	grpcSetup "github.com/sla10132000/b/grpc"
 	"github.com/rs/zerolog/log"
 )
 

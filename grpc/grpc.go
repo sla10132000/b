@@ -20,10 +20,10 @@ func NewServer(address string) *Grpc {
 	}
 }
 
-func (g *Grpc) GetHighScore(ctx context.Context, input *chat.SayHello) (*chat.Message, error) {
+func (g *Grpc) SayHello(ctx context.Context, input *chat.SayHello) (*chat.Message, error) {
 	log.Info().Msg("GetHighScore in m-highscore is called")
 	return &chat.SayHello{
-		Message: "Hello again ",
+		body: "Hello again ",
 	}, nil
 }
 

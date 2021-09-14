@@ -23,7 +23,7 @@ func NewServer(address string) *Grpc {
 func (g *Grpc) SayHello(ctx context.Context, input *chat.Message) (*chat.Message, error) {
 	log.Info().Msg("GetHighScore in m-highscore is called")
 	return &chat.Message{
-		body: "Hello again ",
+		Body: "Hello again ",
 	}, nil
 }
 
